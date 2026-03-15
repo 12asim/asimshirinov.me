@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Blog } from "@/components/Blog";
 import { Footer } from "@/components/Footer";
 import { siteData } from "@/data/site";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const socialLabels = new Set(["github", "linkedin", "instagram"]);
 const sameAs = siteData.socials

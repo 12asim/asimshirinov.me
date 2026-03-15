@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { siteData } from "@/data/site";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -8,6 +9,44 @@ export async function generateStaticParams() {
     return siteData.blog.map((post) => ({
         slug: post.slug,
     }));
+}
+
+/** Build a plain-text description from the first paragraph of the post. */
+function getPostDescription(post: (typeof siteData.blog)[number]): string {
+    const firstParagraph = post.content[0];
+    if (!Array.isArray(firstParagraph)) return "";
+    const raw = firstParagraph.map((part) => part.text).join("");
+    return raw.length > 158 ? raw.slice(0, 155) + "…" : raw;
+}
+
+export async function generateMetadata(
+    { params }: { params: Promise<{ slug: string }> }
+): Promise<Metadata> {
+    const slug = (await params).slug;
+    const post = siteData.blog.find((p) => p.slug === slug);
+    if (!post) return {};
+
+    const title = `${post.title} — Asim Shirinov`;
+    const description = getPostDescription(post);
+    const url = `https://asimshirinov.me/blog/${slug}`;
+
+    return {
+        title,
+        description,
+        alternates: { canonical: `/blog/${slug}` },
+        openGraph: {
+            title,
+            description,
+            url,
+            siteName: "Asim Shirinov",
+            type: "article",
+        },
+        twitter: {
+            card: "summary",
+            title,
+            description,
+        },
+    };
 }
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {

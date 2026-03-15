@@ -14,9 +14,6 @@ export const metadata: Metadata = {
   title: "Asim Shirinov | Computer Science Student at Clarkson University",
   description:
     "Personal website of Asim Shirinov, a Computer Science student at Clarkson University. Projects, writing, research, and contact information.",
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title: "Asim Shirinov | Computer Science Student at Clarkson University",
     description:

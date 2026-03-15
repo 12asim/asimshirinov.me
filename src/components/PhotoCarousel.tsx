@@ -5,16 +5,16 @@ import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 
 const photos = [
-    { src: "/IMG_9113.JPG", alt: "Asim Shirinov 1" },
-    { src: "/IMG_8766.JPG", alt: "Asim Shirinov 2" },
-    { src: "/IMG_0156.JPG", alt: "Asim Shirinov 3" },
-    // { src: "/IMG_8534.JPG", alt: "Asim Shirinov 4" },
-    // { src: "/IMG_8538.JPG", alt: "Asim Shirinov 5" },
-    { src: "/IMG_8544.JPG", alt: "Asim Shirinov 6" },
-    { src: "/IMG_8596.JPG", alt: "Asim Shirinov 7" },
-    { src: "/IMG_9334.JPG", alt: "Asim Shirinov 9" },
-    { src: "/IMG_9538.JPG", alt: "Asim Shirinov 10" },
-    { src: "/IMG_9721.JPG", alt: "Asim Shirinov 11" },
+    { src: "/IMG_9113.JPG", alt: "Asim Shirinov smiling outdoors" },
+    { src: "/IMG_8766.JPG", alt: "Asim Shirinov portrait photo" },
+    { src: "/IMG_0156.JPG", alt: "Asim Shirinov at Clarkson University" },
+    // { src: "/IMG_8534.JPG", alt: "Asim Shirinov" },
+    // { src: "/IMG_8538.JPG", alt: "Asim Shirinov" },
+    { src: "/IMG_8544.JPG", alt: "Asim Shirinov candid photo" },
+    { src: "/IMG_8596.JPG", alt: "Asim Shirinov photo" },
+    { src: "/IMG_9334.JPG", alt: "Asim Shirinov casual photo" },
+    { src: "/IMG_9538.JPG", alt: "Asim Shirinov outdoors" },
+    { src: "/IMG_9721.JPG", alt: "Asim Shirinov personal photo" },
 ];
 
 export default function PhotoCarousel() {
