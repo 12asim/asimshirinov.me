@@ -8,5 +8,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 1,
     },
+    {
+      url: 'https://asimshirinov.me/blog/first-blog-post',
+      lastModified: new Date('2026-02-28'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ]
 }

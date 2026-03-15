@@ -1,6 +1,6 @@
 export const siteData = {
   name: "Asim Shirinov",
-  titleDesc: "Personal website of Asim Shirinov",
+  titleDesc: "Personal website of Asim Shirinov, a Computer Science student at Clarkson University. Projects, writing, research, and contact information.",
   typewriter: ["CS @ Clarkson University", "Interested in software and machine learning", "Writing things down as I go"],
   socials: [
     { label: "email", href: "mailto:asim.tehmezoglu@gmail.com" },
@@ -12,7 +12,7 @@ export const siteData = {
   aboutHighlights: ["Clarkson University", "C++", "Next.js"],
   aboutParagraphs: [
     [
-      { text: "I am a freshman at " },
+      { text: "I'm Asim Shirinov, a Computer Science student at " },
       { text: "Clarkson University", href: "https://www.clarkson.edu/" },
       { text: " with a strong interest in building efficient and scalable software solutions. " },
     ],

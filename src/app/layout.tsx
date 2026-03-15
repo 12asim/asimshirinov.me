@@ -10,8 +10,27 @@ const atkinson = Atkinson_Hyperlegible({
 });
 
 export const metadata: Metadata = {
-  title: siteData.name,
-  description: siteData.titleDesc,
+  metadataBase: new URL("https://asimshirinov.me"),
+  title: "Asim Shirinov | Computer Science Student at Clarkson University",
+  description:
+    "Personal website of Asim Shirinov, a Computer Science student at Clarkson University. Projects, writing, research, and contact information.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Asim Shirinov | Computer Science Student at Clarkson University",
+    description:
+      "Personal website of Asim Shirinov, a Computer Science student at Clarkson University. Projects, writing, research, and contact information.",
+    url: "https://asimshirinov.me",
+    siteName: "Asim Shirinov",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Asim Shirinov | Computer Science Student at Clarkson University",
+    description:
+      "Personal website of Asim Shirinov, a Computer Science student at Clarkson University. Projects, writing, research, and contact information.",
+  },
 };
 
 export default function RootLayout({
