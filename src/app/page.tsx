@@ -19,6 +19,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Asim Shirinov",
   url: "https://asimshirinov.me",
+  image: "https://asimshirinov.me/og-image.jpg",
   jobTitle: "Computer Science Student",
   affiliation: {
     "@type": "CollegeOrUniversity",

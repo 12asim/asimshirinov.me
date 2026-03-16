@@ -11,22 +11,38 @@ const atkinson = Atkinson_Hyperlegible({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://asimshirinov.me"),
-  title: "Asim Shirinov | Computer Science Student at Clarkson University",
+  title: "Asim Shirinov",
   description:
-    "Personal website of Asim Shirinov, a Computer Science student at Clarkson University. Projects, writing, research, and contact information.",
+    "Asim Shirinov — Computer Science student at Clarkson University. Explore projects, research in machine learning & PFAS detection, blog posts, and more.",
+  icons: {
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
-    title: "Asim Shirinov | Computer Science Student at Clarkson University",
+    title: "Asim Shirinov",
     description:
-      "Personal website of Asim Shirinov, a Computer Science student at Clarkson University. Projects, writing, research, and contact information.",
+      "Asim Shirinov — Computer Science student at Clarkson University. Explore projects, research in machine learning & PFAS detection, blog posts, and more.",
     url: "https://asimshirinov.me",
     siteName: "Asim Shirinov",
     type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Asim Shirinov",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
-    title: "Asim Shirinov | Computer Science Student at Clarkson University",
+    card: "summary_large_image",
+    title: "Asim Shirinov",
     description:
-      "Personal website of Asim Shirinov, a Computer Science student at Clarkson University. Projects, writing, research, and contact information.",
+      "Asim Shirinov — Computer Science student at Clarkson University. Explore projects, research in machine learning & PFAS detection, blog posts, and more.",
+    images: ["/og-image.jpg"],
   },
 };
 
